@@ -1,0 +1,130 @@
+/*
+	https://ourcodeworld.com/articles/read/687/how-to-configure-a-header-and-footer-in-dompdf
+*/
+/*
+@page *{
+	margin-top: 2.54cm;
+	margin-bottom: 16.54cm;
+	margin-left: 3.175cm;
+	margin-right: 3.175cm;
+}
+*/
+
+/*
+body {
+	margin-top: 2cm;
+	margin-left: 2cm;
+	margin-right: 2cm;
+	margin-bottom: 12cm;
+}
+
+header {
+	position: fixed;
+	top: 0cm;
+	left: 0cm;
+	right: 0cm;
+	height: 2cm;
+
+	background-color: #03a9f4;
+	color: white;
+	text-align: center;
+	line-height: 1.5cm;
+}
+
+footer {
+	position: fixed; 
+	bottom: 0cm; 
+	left: 0cm; 
+	right: 0cm;
+	height: 2cm;
+
+	background-color: #03a9f4;
+	color: white;
+	text-align: center;
+	line-height: 1.5cm;
+}
+
+#xheader {
+	position: fixed;
+	top: 0cm;
+	left: 0cm;
+	right: 0cm;
+	height: 2cm;
+
+	background-color: #03a9f4;
+	color: white;
+	text-align: center;
+	line-height: 1.5cm;
+}
+*/
+
+
+/** 
+	Set the margins of the page to 0, so the footer and the header
+	can be of the full height and width !
+ **/
+@page {
+	margin: 2.5cm 2cm;
+}
+
+h1{
+	font-family: "Arial";
+}
+
+#header
+{
+	background-color: #03a9f4;
+	color: white;
+	
+	line-height: 1.5cm;
+	
+	width: 180mm;
+	margin:0 15mm;
+	padding-top:3mm;
+}
+#header table
+{
+	width: 100%;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	
+	background:#eee;
+	
+	border-spacing:0;
+	border-collapse: collapse; 
+}
+#header table td
+{
+	width:50%;
+	text-align:center;
+	font-size:9pt;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+
+#footer
+{	
+	width: 180mm;
+	margin:0 15mm;
+	padding-bottom:3mm;
+}
+#footer table
+{
+	width:100%;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	
+	background:#eee;
+	
+	border-spacing:0;
+	border-collapse: collapse; 
+}
+#footer table td
+{
+	width:25%;
+	text-align:center;
+	font-size:9pt;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}

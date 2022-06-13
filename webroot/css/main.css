@@ -1,0 +1,77 @@
+body{
+	background-image: url("/img/bg.png");
+	background-color: #c4c4c4	;
+	background-repeat: no-repeat, repeat;
+
+	background-attachment: fixed;
+	background-position: top; 
+
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+.main{
+	background-color: #fff;
+	font-family: Arial;
+	font-size: 18px;
+	width: 60%;
+	border: 1px solid lightgray;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 30px;
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.46); 
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.46);
+}
+table{
+	width: 100%;
+}
+tr:hover{
+	background: #eee;
+}
+th, td{
+	padding: 10px;
+	font-size: 16px;
+}
+th.id{
+	width: 20px;
+}
+th.id a{
+	text-align: right;
+	color: lightgray;
+}
+td.id{
+	text-align: right;
+	color: lightgray;
+}
+th.name, td.name{
+	text-align: left;
+}
+th.date, td.date{
+	text-align: center;
+}
+.table-tr-last-id{
+	background: #cfc;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+a:hover{
+	color: gray;
+}
+
+
+.card-header{
+	border-bottom: 1px dashed gray;
+}
+.card-header h1, h2{
+	margin-bottom: 5px;
+}
+.card-footer{
+	border-top: 1px dashed gray;
+	padding-top: 10px;
+}
+
